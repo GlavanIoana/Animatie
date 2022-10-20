@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:radial-gradient(#ffcc99,#ff9999);
+}
+.box{
+    display: flex;
+}
+.box .eye{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    display: block;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 50%;
+}
+.box .eye::before{
+    content:'';
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translate(-50%,-50%);
+    width: 45px;
+    height: 45px;
+    background: #000;
+    border-radius: 50%;
+    border: 10px solid #269900;
+    box-sizing: border-box;
+}
